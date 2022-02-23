@@ -11,7 +11,8 @@ const langFile = JSON.parse(fs.readFileSync(LANG_FILE, 'utf8'));
 
 const eventsStopListForBot = [
   'chat.type.announcement',
-  'chat.type.text'
+  'chat.type.text',
+  'multiplayer.player.joined'
 ]
 const eventsStopListForPlayers = [
   'sleep.players_sleeping',

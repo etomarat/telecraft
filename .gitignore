@@ -1,3 +1,6 @@
+#Db
+/db/*
+
 # Logs
 logs
 *.log

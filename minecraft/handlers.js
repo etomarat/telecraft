@@ -9,11 +9,18 @@ const {LANG_FILE, USERNAME} = envs;
 
 const langFile = JSON.parse(fs.readFileSync(LANG_FILE, 'utf8'));
 
+const eventsStopList = [
+  'chat.type.announcement',
+  'chat.type.text',
+  'death.attack.mob',
+  'death.attack.arrow',
+]
+
 export const onChat = (packet) => {
   client.write('client_command', { payload: 0 })
   var jsonMsg = JSON.parse(packet.message);
   const {translate, with: withArr} = jsonMsg;
-  if(translate === 'chat.type.announcement' || translate === 'chat.type.text'|| translate === 'death.attack.mob') {
+  if(eventsStopList.includes(translate)) {
     const username = jsonMsg.with[0].text;
     if(username === USERNAME) {
       return

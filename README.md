@@ -1,4 +1,4 @@
-# telecraft
+# telecraft [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat-square)](https://makeapullrequest.com)
 A bot that forwards messages from minecraft chat to telegram and vice versa.
 
 # How to install
@@ -42,10 +42,7 @@ TELEGRAM_TOKEN="YOU TOKEN HERE"
 ```
 node index.js
 ```
-- On the server side
-```
-#todo
-```
+- On the server side you can use for example [PM2](https://github.com/Unitech/pm2)
 ### 4. How to use
 - Add your bot to group-chat or text him in a pm
 - Available command list:

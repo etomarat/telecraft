@@ -1,0 +1,34 @@
+{
+  "name": "telecraft",
+  "version": "0.1.0",
+  "description": "forwards messages from minecraft chat to telegram and vice versa",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/etomarat/telecraft.git"
+  },
+  "keywords": [
+    "minecraft",
+    "telegram",
+    "bot",
+    "chat",
+    "messages"
+  ],
+  "author": "Marat Aziziov",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/etomarat/telecraft/issues"
+  },
+  "homepage": "https://github.com/etomarat/telecraft#readme",
+  "dependencies": {
+    "dirty": "^1.1.3",
+    "dotenv": "^16.0.0",
+    "minecraft-protocol": "^1.30.0",
+    "node-telegram-bot-api": "^0.56.0",
+    "sprintfjs": "^1.2.17"
+  }
+}

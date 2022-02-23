@@ -31,13 +31,12 @@ bot.onText(/\/say (.+)/, (msg, match) => {
 
 bot.onText(/\/help/, (msg) => {
   const chatId = msg.chat.id;
-  const startCmd = '/start — начать постить из майнкрафта в этот чат'
-  const stopCmd = '/stop — перестать постить'
-  const sayCmd = '/say сообщение — отправить сообщение в чат майнкрафта'
-  const regCmd = '/reg юзернейм — задать своё имя для /say , если не задать то будет username из телеги'
-  const extraText1 = 'Бот работает как в чате так и в личке.'
-  const extraText2 = 'Принимаются пулл-реквесты: https://github.com/etomarat/telecraft'
-  bot.sendMessage(chatId, `${startCmd}\n${stopCmd}\n${sayCmd}\n${regCmd}`);
+  const startCmd = '/start — start forwarding messages from minecraft chat here'
+  const stopCmd = '/stop — stop it'
+  const sayCmd = '/say message — send message to minecraft chat'
+  const regCmd = '/reg username — set your username for /say , otherwise it will be username from telegram'
+  const extraText = 'PRs welcome: https://github.com/etomarat/telecraft'
+  bot.sendMessage(chatId, `${startCmd}\n${stopCmd}\n${sayCmd}\n${regCmd}\n${extraText}`);
 });
 
 bot.on("polling_error", (msg) => console.log(msg));

@@ -15,6 +15,7 @@ const eventsStopListForBot = [
 ]
 const eventsStopListForPlayers = [
   'sleep.players_sleeping',
+  'sleep.skipping_night'
 ]
 
 const renderDeepStrings = (jsonMsg, tmplString) => {

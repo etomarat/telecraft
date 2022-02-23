@@ -52,8 +52,9 @@ node index.js
 /say message — send message to minecraft chat
 /reg username — set your username for /say , otherwise it will be username from telegram
 ```
-### 5. Recommendations
-- Change the game mode to "spectator" for the chatbot-player so that it does not get killed. In game-console
+### 5. Recommendation
+- Change the game mode to "spectator" for the chatbot-player so that it does not get killed.
+In game-console:
 ```
 gamemode spectator "chatbotusername"
 ```

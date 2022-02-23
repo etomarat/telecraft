@@ -47,8 +47,17 @@ node index.js
 - Add your bot to group-chat or text him in a pm
 - Available command list:
 ```
-/start — start forwarding messages from minecraft chat here'
-/stop — stop it'
-/say message — send message to minecraft chat'
-/reg username — set your username for /say , otherwise it will be username from telegram'
+/start — start forwarding messages from minecraft chat here
+/stop — stop it
+/say message — send message to minecraft chat
+/reg username — set your username for /say , otherwise it will be username from telegram
+```
+### 5. Recommendations
+- Change the game mode to "spectator" for the chatbot-player so that it does not get killed. In game-console
+```
+gamemode spectator "chatbotusername"
+```
+or
+```
+/gamemode spectator "chatbotusername"
 ```

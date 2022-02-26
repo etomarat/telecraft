@@ -11,7 +11,9 @@ const client = mp.createClient({
   port: PORT,
   username: USERNAME,
   password: PASSWORD,
-  auth: AUTH
+  auth: AUTH,
+  closeTimeout: 240*1000,
+  checkTimeoutInterval: 60*1000,
 });
 
 client.on('chat', onChat);
